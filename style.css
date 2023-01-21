@@ -1,0 +1,93 @@
+body {
+    background-color: rgb(189, 109, 29);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    padding: 10px;
+
+}
+
+.item {
+    background-color: bisque;
+    padding: 10px;
+}
+
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3
+}
+
+.item1 {
+    height: 460px;
+    width: 580px;
+}
+
+.item6 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.item7 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.item2,
+.item3,
+.item4,
+.item5 {
+    height: 207px;
+}
+
+.heading h1 {
+    font-family: 'Inter', sans-serif;
+    font-style: bold;
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 35px;
+    padding-left: 5px;
+    color: #000;
+}
+
+div.item img {
+    width: 100%;
+    object-fit: fill;
+}
+
+.item1 img {
+    height: 460px
+}
+
+.item2 img,
+.item3 img,
+.item4 img,
+.item5 img {
+    height: 207px;
+}
+
+.item6 img,
+.item7 img {
+    height: 208px;
+}
+
+.item7 {
+    position: relative;
+}
+
+.item7 p {
+    font-family: 'Inter', sans-serif;
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    right: 10px;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    color: black;
+}
